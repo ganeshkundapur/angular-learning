@@ -1,0 +1,21 @@
+@import '../../../../custom-styles/variable.scss';
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.navlist {
+mat-nav-list.mat-nav-list.mat-list-base {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  padding-top: 0;
+}
+a {
+  color: #fff;
+}
+}
