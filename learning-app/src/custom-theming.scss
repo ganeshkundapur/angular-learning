@@ -16,10 +16,11 @@ $learning-app-primary: mat-palette($mat-indigo);
 $learning-app-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$learning-app-warn: mat-palette($mat-indigo);
+$learning-app-warn: mat-palette($mat-pink);
 
 // Create the theme object (a Sass map containing all of the palettes).
 $learning-app-theme: mat-light-theme($learning-app-primary, $learning-app-accent, $learning-app-warn);
+
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
