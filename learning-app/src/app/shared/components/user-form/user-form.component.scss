@@ -1,0 +1,31 @@
+@import './../../../../custom-styles/variable.scss';
+
+
+.example-container {
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix {
+  width: 100%;
+}
+.mat-form-field {
+  width: 100%;
+}
+}
+
+.submit.text-right {
+  margin: 7px 0;
+}
+.card {
+  h3 {
+    color: $primary;
+  }
+}
+@media(min-width: 961px) {
+  .card {
+    width: 500px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  }
+
+}

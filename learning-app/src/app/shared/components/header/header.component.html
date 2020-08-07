@@ -8,11 +8,13 @@
       <mat-nav-list >
         <a mat-list-item  routerLink = ''>Home </a>
         <a mat-list-item  routerLink = '/products'>Products </a>
+        <a mat-list-item  routerLink = '/signIn'>Sign In </a>
+        <a mat-list-item  routerLink = '/signUp'>Sign Up </a>
         <a mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
           <mat-icon>more_vert</mat-icon>
         </a>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>
+          <button mat-menu-item (click)="logout()">
             <span>Logout</span>
           </button>
 
