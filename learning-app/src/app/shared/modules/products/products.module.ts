@@ -1,3 +1,4 @@
+import { CartButtonComponent } from './../../components/cart-button/cart-button.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductCardComponent } from './../../components/product-card/product-card.component';
 
@@ -13,6 +14,7 @@ import { MaterialModule } from '../material.module';
   declarations: [
     ProductsComponent,
     ProductCardComponent,
+    CartButtonComponent
   ],
   imports: [
     CommonModule,

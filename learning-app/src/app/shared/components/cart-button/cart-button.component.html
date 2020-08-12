@@ -1,0 +1,9 @@
+<button mat-raised-button color = "primary"
+(click)="addCart(product)"
+*ngIf="cartItems === 0">Add to cart</button>
+
+<ng-container *ngIf="cartItems > 0">
+    <button mat-raised-button color = "primary" (click)="removeCart(product)">-</button>
+    <button mat-raised-button>{{cartItems }} item<span *ngIf="cartItems > 1">s</span></button>
+    <button mat-raised-button color = "primary" (click)="addCart(product)">+</button>
+</ng-container>

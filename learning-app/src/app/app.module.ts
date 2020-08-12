@@ -18,8 +18,8 @@ import { UserService } from './shared/services/user.service';
     HeaderComponent,
     SignupComponent,
     LoginComponent,
-    UserFormComponent
-  ],
+    UserFormComponent,
+ ],
   imports: [
     BrowserModule,
     AppRoutingModule,

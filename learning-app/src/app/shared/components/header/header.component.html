@@ -10,6 +10,10 @@
         <a mat-list-item  routerLink = '/products'>Products </a>
         <a mat-list-item  routerLink = '/signIn'>Sign In </a>
         <a mat-list-item  routerLink = '/signUp'>Sign Up </a>
+        <a mat-list-item  >
+          <mat-icon>shopping_cart</mat-icon>
+       <span *ngIf=" _cartService.totalCartItems > 0">  {{ _cartService.totalCartItems}}</span>
+        </a>
         <a mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
           <mat-icon>more_vert</mat-icon>
         </a>
