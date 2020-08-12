@@ -17,7 +17,7 @@ export class UserService {
       this._router.navigate(['']);
       this.isReset = true;
     } else {
-      alert('please enter username and password correctly!!');
+      alert('please enter username and password correctly!!. If your new user kindly sign up');
     }
   }
 

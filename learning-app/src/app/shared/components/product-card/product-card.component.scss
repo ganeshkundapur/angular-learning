@@ -1,0 +1,19 @@
+
+.mat-card  {
+  margin: 1rem;
+  min-height: 200px;
+}
+mat-card.mat-card:nth-child(even) {
+  margin-right: 12px;
+}
+.rel {
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+  }
+  button {
+    position: absolute;
+    bottom: 0;
+  }
+}

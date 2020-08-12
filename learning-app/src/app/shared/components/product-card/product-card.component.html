@@ -1,0 +1,18 @@
+<mat-card>
+    {{productToChild.productName}}
+
+
+    <div class="img" style="width: 200px;height: 200px;">
+      <img [src]="productToChild.url" alt="" width="100%">
+    </div>
+
+    <div class="button">
+      <button mat-raised-button color = "primary">Add to cart</button>
+
+        <button mat-raised-button color = "primary">-</button>
+        <button mat-raised-button>cart</button>
+        <button mat-raised-button color = "primary">+</button>
+
+    </div>
+
+</mat-card>

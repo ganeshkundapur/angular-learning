@@ -1,1 +1,15 @@
-<p>products works!</p>
+<div class="wrapper">
+
+<div class="container">
+    <div
+    fxLayout="row wrap"
+  >
+        <app-product-card
+         *ngFor="let product of products"
+         [productToChild] = "product"
+         fxFlex="25%"
+         fxFlex.xs="100%"
+         ></app-product-card>
+    </div>
+  </div>
+</div>
