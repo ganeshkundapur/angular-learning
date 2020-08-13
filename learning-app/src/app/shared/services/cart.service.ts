@@ -8,9 +8,7 @@ export class CartService {
 
   cart$: BehaviorSubject<any> = new BehaviorSubject(null);
   cartSource = this.cart$.asObservable();
-  totalCartItems = 0
-  prevCart = 0;
-
+  totalCartItems = 0;
 
   products: any = [
     {id: 1, productName: 'Apple', url: 'https://img3.exportersindia.com/product_images/bc-full/2019/1/5128568/apple-1546928018-4628939.jpeg'},
@@ -27,6 +25,14 @@ export class CartService {
 
   constructor() {
     this.products.map(x => x.num = 0);
+  }
+
+  onAddCart() {
+
+  }
+
+  onRemoveCart() {
+
   }
 
   getCartItems(cart, state) {

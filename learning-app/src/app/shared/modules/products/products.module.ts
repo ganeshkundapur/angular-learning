@@ -1,26 +1,22 @@
-import { CartButtonComponent } from './../../components/cart-button/cart-button.component';
+import { SharedModule } from './../shared.module';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductCardComponent } from './../../components/product-card/product-card.component';
 
 import { ProductsComponent } from './../../../pages/products/products.component';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ProductsRoutingModule } from './products-routing.module';
-import { MaterialModule } from '../material.module';
-
 
 
 @NgModule({
   declarations: [
     ProductsComponent,
     ProductCardComponent,
-    CartButtonComponent
   ],
   imports: [
-    CommonModule,
-    MaterialModule,
+    SharedModule,
     ProductsRoutingModule,
-    FlexLayoutModule
-  ]
+    FlexLayoutModule,
+  ],
 })
 export class ProductsModule { }

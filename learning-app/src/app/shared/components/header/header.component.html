@@ -10,7 +10,7 @@
         <a mat-list-item  routerLink = '/products'>Products </a>
         <a mat-list-item  routerLink = '/signIn'>Sign In </a>
         <a mat-list-item  routerLink = '/signUp'>Sign Up </a>
-        <a mat-list-item  >
+        <a mat-list-item  routerLink = '/cart' >
           <mat-icon>shopping_cart</mat-icon>
        <span *ngIf=" _cartService.totalCartItems > 0">  {{ _cartService.totalCartItems}}</span>
         </a>

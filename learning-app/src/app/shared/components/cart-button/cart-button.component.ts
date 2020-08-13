@@ -10,14 +10,9 @@ import { EventEmitter } from 'events';
 export class CartButtonComponent implements OnInit {
   @Input() product;
   currnetId: any;
-  cartItems = 0
+  cartItems = 0;
 
   constructor(private _cartService: CartService) { }
-
-  onClickCart(id) {
-    this.currnetId = id;
-    console.log(id);
-  }
 
   addCart(product) {
     this.cartItems += 1;
@@ -32,7 +27,8 @@ export class CartButtonComponent implements OnInit {
   }
 
   ngOnInit() {
-
+   console.log(this.product);
+   this.cartItems = this.product.num;
   }
 
 }
